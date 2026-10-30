@@ -5,27 +5,27 @@ A responsive, Kanban Task Board built with **React 19**, **Tailwind CSS**, and *
 ---
 
 ## 🚀 Live Demo & Repository
-- **GitHub Repository**: [Repository Link](https://github.com/your-username/kanban-board)
-- **Live Deployed Link**: [Vercel / Netlify Link](https://your-kanban-board.vercel.app)
+- **GitHub Repository**: [Repository Link](https://github.com/chanchal430/kanban-board)
+- **Live Deployed Link**: [Vercel](https://kanban-board-psi-vert.vercel.app/)
 - **Demo Video Walkthrough**: [Loom / Video Link](https://loom.com/share/your-demo-id)
 
 ---
 
 ## ✨ Features Checklist
 
-| Feature | Description | Status |
+| Feature | Description |
 | :--- | :--- | :---: |
-| **Add Task** | Create tasks with title, description, priority (`low`, `medium`, `high`), due date, and initial column | ✅ |
-| **Edit Task** | Update existing tasks with prepopulated form values and validation feedback | ✅ |
-| **Delete Task** | Safe deletion with inline confirmation dialog to prevent accidental data loss | ✅ |
-| **Status Movement** | Move tasks between columns via **HTML5 Drag-and-Drop** or quick column buttons/select dropdown | ✅ |
-| **Search** | Real-time case-insensitive search by task title and description with instant clear button | ✅ |
-| **Filters** | Filter concurrently by Priority (`All`, `High`, `Medium`, `Low`) and Status Column (`All`, `To Do`, `In Progress`, `Completed`) | ✅ |
-| **Active Filter Badges** | Active filter counter and one-click "Clear filters" action | ✅ |
-| **LocalStorage Persistence** | Board state automatically syncs to `localStorage` and survives page refreshes; auto-populates with starter tasks if empty | ✅ |
-| **Responsive UI** | Fluid layouts optimized for desktop (3-column Kanban grid) and mobile (vertical stacked cards with touch-friendly controls) | ✅ |
-| **UX & Empty States** | Distinct empty states per lane, global "No matching tasks found" banner, and real-time Toast notifications | ✅ |
-| **Form Validation** | Required non-empty title, character counters (100 max title, 500 max desc), and due date formatting | ✅ |
+| **Add Task** | Create tasks with title, description, priority (`low`, `medium`, `high`), due date, and initial column |
+| **Edit Task** | Update existing tasks with prepopulated form values and validation feedback |
+| **Delete Task** | Safe deletion with inline confirmation dialog to prevent accidental data loss |
+| **Status Movement** | Move tasks between columns via **HTML5 Drag-and-Drop** or quick column buttons/select dropdown |
+| **Search** | Real-time case-insensitive search by task title and description with instant clear button |
+| **Filters** | Filter concurrently by Priority (`All`, `High`, `Medium`, `Low`) and Status Column (`All`, `To Do`, `In Progress`, `Completed`) |
+| **Active Filter Badges** | Active filter counter and one-click "Clear filters" action |
+| **LocalStorage Persistence** | Board state automatically syncs to `localStorage` and survives page refreshes; auto-populates with starter tasks if empty |
+| **Responsive UI** | Fluid layouts optimized for desktop (3-column Kanban grid) and mobile (vertical stacked cards with touch-friendly controls) |
+| **UX & Empty States** | Distinct empty states per lane, global "No matching tasks found" banner, and real-time Toast notifications |
+| **Form Validation** | Required non-empty title, character counters (100 max title, 500 max desc), and due date formatting |
 
 ---
 
@@ -51,6 +51,7 @@ src/
 ├── main.jsx               # React DOM root with ToastContainer and provider setup
 └── index.css              # TailwindCSS v4 theme 
 
+```
 ---
 
 ## 🧠 State Management & Key Decisions
@@ -113,7 +114,7 @@ Task {
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/kanban-board.git
+git clone https://github.com/chanchal430/kanban-board.git
 
 # Navigate to project directory
 cd kanban-board
