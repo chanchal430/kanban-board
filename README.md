@@ -11,10 +11,46 @@ A responsive, Kanban Task Board built with **React 19**, **Tailwind CSS**, and *
 
 ---
 
+## 🛠️ Local Development & Scripts
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm 
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/chanchal430/kanban-board.git
+
+# Navigate to project directory
+cd kanban-board
+
+# Install dependencies
+npm install
+```
+
+### Running Locally
+```bash
+# Start development server
+npm run dev
+```
+Open [http://localhost:5173/](http://localhost:5173/) in your browser.
+
+### Quality Checks
+```bash
+# Run ESLint (must pass with 0 errors)
+npm run lint
+
+# Build production bundle
+npm run build
+```
+
+---
+
 ## ✨ Features Checklist
 
 | Feature | Description |
-| :--- | :--- | :---: |
+| :--- | :--- |
 | **Add Task** | Create tasks with title, description, priority (`low`, `medium`, `high`), due date, and initial column |
 | **Edit Task** | Update existing tasks with prepopulated form values and validation feedback |
 | **Delete Task** | Safe deletion with inline confirmation dialog to prevent accidental data loss |
@@ -25,7 +61,7 @@ A responsive, Kanban Task Board built with **React 19**, **Tailwind CSS**, and *
 | **LocalStorage Persistence** | Board state automatically syncs to `localStorage` and survives page refreshes; auto-populates with starter tasks if empty |
 | **Responsive UI** | Fluid layouts optimized for desktop (3-column Kanban grid) and mobile (vertical stacked cards with touch-friendly controls) |
 | **UX & Empty States** | Distinct empty states per lane, global "No matching tasks found" banner, and real-time Toast notifications |
-| **Form Validation** | Required non-empty title, character counters (100 max title, 500 max desc), and due date formatting |
+| **Form Validation** | Required non-empty title, character counters (100 max title, 500 max description), and due date formatting |
 
 ---
 
@@ -102,41 +138,5 @@ Task {
 3. **Zero Search Results**: When filtering yields 0 matches, a board-level banner guides the user to reset filters with one click.
 4. **Overdue Indicators**: Date status calculates whether a task is overdue, due today, due tomorrow, or upcoming.
 5. **Keyboard Accessibility**: Modal can be closed with the `Escape` key and auto-focuses the title field upon opening.
-
----
-
-## 🛠️ Local Development & Scripts
-
-### Prerequisites
-- Node.js (v18 or higher recommended)
-- npm 
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/chanchal430/kanban-board.git
-
-# Navigate to project directory
-cd kanban-board
-
-# Install dependencies
-npm install
-```
-
-### Running Locally
-```bash
-# Start development server
-npm run dev
-```
-Open [http://localhost:5173/](http://localhost:5173/) in your browser.
-
-### Quality Checks
-```bash
-# Run ESLint (must pass with 0 errors)
-npm run lint
-
-# Build production bundle
-npm run build
-```
 
 ---
