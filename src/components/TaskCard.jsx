@@ -75,12 +75,15 @@ const TaskCard = ({ task, onEdit }) => {
     toast.error(`Deleted "${task.title}"`);
   };
 
-  const handleStatusChange = () => {
+  const handleStatusChange = (event) => {
     dispatch({
       type: "MOVE",
-      payload: task.id
+      payload: {
+        id: task.id,
+        status: event.target.value
+      }
     });
-    toast.success(`Task moved`)
+    toast.success(`Task moved Successfully`)
   }
 
   return (
@@ -126,13 +129,13 @@ const TaskCard = ({ task, onEdit }) => {
       </div>
 
       {/* Task Title */}
-      <h3 className="break-words text-sm font-bold leading-snug text-slate-900 group-hover:text-violet-900">
+      <h3 className="wrap-break-word text-sm font-bold leading-snug text-slate-900 group-hover:text-violet-900">
         {task.title}
       </h3>
 
       {/* Task Description */}
       {task.description && (
-        <p className="mt-1.5 line-clamp-2 break-words text-xs leading-relaxed text-slate-500">
+        <p className="mt-1.5 line-clamp-2 wrap-break-word text-xs leading-relaxed text-slate-500">
           {task.description}
         </p>
       )}

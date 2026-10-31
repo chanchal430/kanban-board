@@ -72,7 +72,7 @@ const Filter = ({ filters, onChange, onClear, hasActiveFilters }) => {
               className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2.5 text-xs font-semibold text-violet-700 transition hover:bg-violet-100 active:scale-95"
             >
               <X size={14} />
-              <span>Clear filters {activeCount > 0 ? `(${activeCount})` : ""}</span>
+              <span>Clear filters</span>
             </button>
           )}
         </div>

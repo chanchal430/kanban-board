@@ -7,7 +7,7 @@ A responsive, Kanban Task Board built with **React 19**, **Tailwind CSS**, and *
 ## 🚀 Live Demo & Repository
 - **GitHub Repository**: [Repository Link](https://github.com/chanchal430/kanban-board)
 - **Live Deployed Link**: [Vercel](https://kanban-board-psi-vert.vercel.app/)
-- **Demo Video Walkthrough**: [Loom / Video Link](https://loom.com/share/your-demo-id)
+- **Demo Video Walkthrough**: [Video Link](https://drive.google.com/file/d/14_eh8nHg7Gc76wukHGu9ZAlhnqnrSUj_/view?usp=sharing)
 
 ---
 
@@ -102,7 +102,6 @@ src/
   - `EDIT`: Immutably updates task properties matching the target ID.
   - `DELETE`: Removes task by ID.
   - `MOVE`: Updates only the task's `status` column.
-  - `CLEAR_ALL`: Clears board to test empty board UX.
 
 ### 3. Native HTML5 Drag and Drop with Visual Feedback
 - `TaskCard` implements `draggable`, setting `dataTransfer.setData("taskId", task.id)`.
@@ -111,7 +110,7 @@ src/
 
 ### 4. Robust LocalStorage Synchronization
 - Uses a centralized key (`tasks`).
-- `loadTasks()` handles first-time visitors by supplying rich starter tasks so evaluators see an active board immediately.
+- `loadTasks()` handles getting tasks from localstorage.
 - Wrapped in `try...catch` blocks to protect against storage quota exceeded or disabled storage environments.
 
 ---
